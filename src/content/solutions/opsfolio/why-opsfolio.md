@@ -27,7 +27,7 @@ Getting security wrong damages your business and brand. Getting compliance wrong
 It begins with focusing on your risks, selecting the right tools, and working with a trusted partner.
 
 
-<a href="/www.netspective.com/solutions/opsfolio/register/?q=2"><button class="px-3 py-2 text-xs font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-sky-700 dark:hover:bg-sky-700 dark:focus:ring-blue-800">Request a free consultation</button></a>
+<a href="/solutions/opsfolio/register/?q=2"><button class="px-3 py-2 text-xs font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-sky-700 dark:hover:bg-sky-700 dark:focus:ring-blue-800">Request a free consultation</button></a>
 
 <article>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-center">

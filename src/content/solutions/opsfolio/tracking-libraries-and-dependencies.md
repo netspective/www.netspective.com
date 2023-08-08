@@ -27,7 +27,7 @@ Use Opsfolio to:
 Opsfolio helps you find and reduce the biggest security risks to your code.
 
 Want to find out if your third party apps are safe to use?
-<a href="/www.netspective.com/solutions/opsfolio/register/?q=4"><button class="px-3 py-2 text-xs font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-sky-700 dark:hover:bg-sky-700 dark:focus:ring-blue-800">Get a free basic risk assessment today</button></a>
+<a href="/solutions/opsfolio/register/?q=4"><button class="px-3 py-2 text-xs font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-sky-700 dark:hover:bg-sky-700 dark:focus:ring-blue-800">Get a free basic risk assessment today</button></a>
 
 
 

@@ -38,7 +38,7 @@ description: Collaborate
                 <li> Reduce the financial and legal risk of non-compliance.</li>
            </ul>
            <p>Want help with managing your compliance requirements?</p>
-           <a href="/www.netspective.com/solutions/opsfolio/register/?q=2"><button class="px-3 py-2 text-xs font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-sky-700 dark:hover:bg-sky-700 dark:focus:ring-blue-800">Get a free consultation today</button></a>
+           <a href="/solutions/opsfolio/register/?q=2"><button class="px-3 py-2 text-xs font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-sky-700 dark:hover:bg-sky-700 dark:focus:ring-blue-800">Get a free consultation today</button></a>
         </div>         
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5">   
@@ -89,7 +89,7 @@ description: Collaborate
                 <li> Perform security assessments and reduce risks.</li>
                 <li> Perform ongoing monitoring (by request).</li>
             </ul>
-            <a href="/www.netspective.com/solutions/opsfolio/register/?q=3"><button class="px-3 py-2 text-xs font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-sky-700 dark:hover:bg-sky-700 dark:focus:ring-blue-800">Get in touch with our experts</button></a>
+            <a href="/solutions/opsfolio/register/?q=3"><button class="px-3 py-2 text-xs font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-sky-700 dark:hover:bg-sky-700 dark:focus:ring-blue-800">Get in touch with our experts</button></a>
         </div>         
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5">   
@@ -125,7 +125,7 @@ description: Collaborate
             <p>Loss of data due to fraud and data breaches caused by malicious insiders can wreak havoc on your company’s brand value and customer loyalty. If your company’s name turns up in the news for reasons such as data breaches, then the stock prices are going to go down and it is going to turn your good customers away.</p>
             <p>Opsfolio continuously watches networks for malicious activity, tracks new devices added to the network, tracks new applications added to the existing devices, watches for updates to your software libraries and components and notifies you of any suspicious activity.</p>
             <p>Want to learn how secure your network is?</p>
-            <a href="/www.netspective.com/solutions/opsfolio/register/?q=3"><button class="px-3 py-2 text-xs font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-sky-700 dark:hover:bg-sky-700 dark:focus:ring-blue-800">Get a free basic risk assessment today</button></a>
+            <a href="/solutions/opsfolio/register/?q=3"><button class="px-3 py-2 text-xs font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-sky-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-sky-700 dark:hover:bg-sky-700 dark:focus:ring-blue-800">Get a free basic risk assessment today</button></a>
         </div>
          <div>
             <div class="flex mb-7 mt-7"><img src="/assets-natural/brand/www.netspective.com/solutions/opsfolio/raci-matrix1.png"alt=""></div>            
