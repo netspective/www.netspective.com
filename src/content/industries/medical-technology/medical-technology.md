@@ -26,9 +26,9 @@ Netspective brings a comprehensive approach to managing and transforming your pr
 
 Netspective offers several solutions and services bringing significant business impacts to Medical Technology firms. These include:
 
-**[Consulting Services](knowledge-center/www.netspective.com/consulting-services/)** Our consulting services build exceptional strategies for your entire business along with the optimization of the business processes. We also manage your technology requirements and vendors in addition to providing industry and technology research. Our veteran team can also provide guidance on regulatory compliance and standards.
+**[Consulting Services](/consulting-services/)** Our consulting services build exceptional strategies for your entire business along with the optimization of the business processes. We also manage your technology requirements and vendors in addition to providing industry and technology research. Our veteran team can also provide guidance on regulatory compliance and standards.
 
-**[Technology Services](knowledge-center/www.netspective.com/technology-services/)** Our technology services range from architecture design, development , testing and test test automation to deployment and management, analytics, cloud and mobility, web 2.0 and integration.
+**[Technology Services](/technology-services/)** Our technology services range from architecture design, development , testing and test test automation to deployment and management, analytics, cloud and mobility, web 2.0 and integration.
 
 **[Solutions](/solutions/)**  We provide solutions for integration with EHRs and also between medical devices. Our pre-built framework, Medigy, enables the smooth integration with EHR/EMR systems. Our framework, Fluent allows for M2M or inter-device connectivity. We also allow for the integration between medical technology applications and between applications and medical devices with our frameworks, Connect and Cloud Agent with Narthex.
 
