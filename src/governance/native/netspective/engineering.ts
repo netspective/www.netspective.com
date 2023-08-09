@@ -66,7 +66,7 @@ export interface Props {
     {
         weight: "11",
         name: "Priyadarshini S Guptan",
-        image: "/assets-natural/brand/www.netspective.com/team/female-avatar.png",
+        image: "/assets-natural/brand/www.netspective.com/team/PriyaSGuptan.jpg",
     },
     {
         weight: "12",
