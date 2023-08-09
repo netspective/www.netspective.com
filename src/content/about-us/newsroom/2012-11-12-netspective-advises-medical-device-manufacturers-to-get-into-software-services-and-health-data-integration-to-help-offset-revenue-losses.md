@@ -47,7 +47,9 @@ _**Shahid Shah**_
 _**Shahid Shah**_ 
 
 <br />
-##### Contacts
+
+**Contacts**
+
 **Gunjan Siroya** <br />
 SVP, Customer Development <br />
 gunjan.siroya@netspective.com <br />
