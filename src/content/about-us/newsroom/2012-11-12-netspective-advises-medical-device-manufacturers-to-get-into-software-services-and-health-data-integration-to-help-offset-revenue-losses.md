@@ -37,13 +37,13 @@ Shah declared that medical device manufacturers will have to get into software, 
 
 **Quotes**
 
-> *" The solutions to revenue and profit pressures are not simple but the good news is that medical device manufacturers have many revenue generation opportunities in software, services, and big data. Strong knowledge of regulated IT, modern software development, open source technologies, and the new service-based economy are all required but easy to enough to acquire or outsource today.*           
+> *" The solutions to revenue and profit pressures are not simple but the good news is that medical device manufacturers have many revenue generation opportunities in software, services, and big data. Strong knowledge of regulated IT, modern software development, open source technologies, and the new service-based economy are all required but easy to enough to acquire or outsource today. "*           
 _**Shahid Shah**_ 
 
-> *" The next decade will see many stakeholders struggle with healthcare data management and device vendors should help hospitals increase the value of their device purchases through software and data.*                         
+> *" The next decade will see many stakeholders struggle with healthcare data management and device vendors should help hospitals increase the value of their device purchases through software and data. "*                         
 _**Shahid Shah**_ 
 
-> *" He who creates, manages, owns, and puts to use healthcare data wins in the end.*      
+> *" He who creates, manages, owns, and puts to use healthcare data wins in the end. "*      
 _**Shahid Shah**_ 
 
 <br />
