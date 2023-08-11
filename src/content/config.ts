@@ -3,6 +3,7 @@ import consultingSevicesCollection from "./consulting-services/_collection";
 import technologySevicesCollection from "./technology-services/_collection";
 import thoughtleadershipSevicesCollection from "./thought-leadership/_collection";
 import solutionsSevicesCollection from "./solutions/_collection";
+import ipSevicesCollection from "./ip/_collection";
 /**
  * We define collections outside of config.ts so that they can easily be removed
  * during development or need to be pulled into different Astro projects.
@@ -15,7 +16,9 @@ export const collections = {
   'about-us': aboutusSevicesCollection,
   'technology-services': technologySevicesCollection,
   'thought-leadership': thoughtleadershipSevicesCollection,
-  'solutions': solutionsSevicesCollection
+  'solutions': solutionsSevicesCollection,
+  'ip': ipSevicesCollection
+
 } as const;
 
 export type ContentCollection = keyof typeof collections;

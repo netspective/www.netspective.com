@@ -1,0 +1,50 @@
+---
+import NetspectiveLayout from "../../layouts/ds/tailwind/NetspectiveLayout.astro";
+
+import { CollectionEntry, getCollection } from "astro:content";
+
+const ipEntries = await getCollection("ip");
+---
+<NetspectiveLayout>
+    <main>
+        <section class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+          <article class="pb-6 curated-content">
+            <div class="text-center">
+             <h3 class="text-2xl font-bold mb-10 mt-4 text-center inline-flex"><span class="bg-orange-600 text-white py-2 px-8">Intellectual Property</span></h3>
+            </div>
+            <div class="relative overflow-x-auto">
+                <table class="table-auto w-full divide-y divide-gray-300 table-space">
+                  <thead>
+                    <tr class="divide-x divide-gray-200 bg-gray-300">
+                      <th>Image</th>
+                      <th>Patent / Application Number</th>
+                      <th>Title</th>
+                      <th>Overview</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200 bg-slate-50">                    
+                  {
+                    ipEntries.length > 0
+                      ? ipEntries.map(
+                          (post) => (
+                          <tr class="divide-x divide-gray-200">
+                            <td><img src={post.data.thumbnail} alt="" class="w-12 h-12 rounded-md" /></td>
+                            <td><a href={post.data.url}>{post.data.patent_number}</a></td>
+                            <td>{post.data.title}</td>
+                            <td>{post.data.overview}</td> 
+                          </tr>
+                          
+                          ),
+                        )
+                      : "No data"
+                  }
+                    
+                  </tbody>
+                </table>
+            </div>
+          <div class="clear"></div>
+          </article>  
+        </section>
+      </main>
+
+</NetspectiveLayout>

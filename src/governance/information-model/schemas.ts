@@ -20,3 +20,28 @@ import { z } from "zod";
     layout: z.string().optional().nullable(),
   })
   .strict();
+
+  export const ipSevicesSchema = z.object({
+    title: z.string(),
+    patent_number: z.string(),
+    date_issued:  z
+    .string()
+    .transform((str) => new Date(str))
+    .optional(),
+    inventors: z.string().optional().nullable(),
+    categories: z.string().optional().nullable(),
+    thumbnail: z.string().optional().nullable(),
+    description: z.string().optional().nullable(),
+    url: z.string().optional().nullable(),
+    overview: z.string().optional().nullable(),
+    slugid: z.string().optional().nullable(),
+    application_filledby: z.string().optional().nullable(),
+    application_granded:  z
+    .string()
+    .transform((str) => new Date(str))
+    .optional(),    
+    published_date: z
+    .string()
+    .transform((str) => new Date(str))
+    .optional()
+  }).strict();
