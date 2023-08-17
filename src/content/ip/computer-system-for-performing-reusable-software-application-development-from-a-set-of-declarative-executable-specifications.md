@@ -2,7 +2,7 @@
 title: "Computer System For Performing Reusable Software Application Development From A Set Of Declarative Executable Specifications"
 application_filledby: Netspactive Communications LLC
 patent_number: "US 7039898B2"
-date_issued: "April 27, 2006"
+date_issued: "April 27, 2006" 
 inventors: "John Doe, Jane Smith"
 overview: "RPX Corporation"
 categories: "Technology, Innovation"
@@ -11,6 +11,7 @@ description: "Computer System For Performing Reusable Software Application Devel
 url: "/ip/computer-system-for-performing-reusable-software-application-development-from-a-set-of-declarative-executable-specifications"
 application_granded: "2006-05-02"
 published_date: "2006-05-02"
+pdf: "https://patentimages.storage.googleapis.com/2f/e7/27/f40f5ddb15d76e/US7039898.pdf"
 ---
 
 **Abstract**

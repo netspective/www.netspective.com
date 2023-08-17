@@ -43,5 +43,6 @@ import { z } from "zod";
     published_date: z
     .string()
     .transform((str) => new Date(str))
-    .optional()
+    .optional(),
+    pdf: z.string().optional().nullable(),
   }).strict();

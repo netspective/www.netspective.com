@@ -11,6 +11,7 @@ description: "US Patent Title"
 url: "/ip/social-authentication-for-accessing-health-records"
 application_granded: "2006-05-02"
 published_date: "2006-05-02"
+pdf: "https://patentimages.storage.googleapis.com/6d/cb/b2/f1f4ee3ab61bfc/US20130204641A1.pdf"
 ---
 **Abstract**
 

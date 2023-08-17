@@ -11,6 +11,7 @@ description: "US Patent Title"
 url: "/ip/system-and-method-for-managing-devices-and-data-in-a-medical-environment"
 application_granded: "2006-05-02"
 published_date: "2006-05-02"
+pdf: "https://patentimages.storage.googleapis.com/23/16/b8/521778a0b74ffb/US20130204145A1.pdf"
 ---
 **Abstract**
 

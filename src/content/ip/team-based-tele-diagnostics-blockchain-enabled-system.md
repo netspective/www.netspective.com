@@ -11,4 +11,5 @@ description: "US Patent Title"
 url: "/ip/team-based-tele-diagnostics-blockchain-enabled-system"
 application_granded: "2006-05-02"
 published_date: "2006-05-02"
+pdf: 
 ---
