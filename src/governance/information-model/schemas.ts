@@ -47,23 +47,24 @@ import { z } from "zod";
     pdf: z.string().optional().nullable(),
   }).strict();
   export const intellectualPropertySchema = z.object({
-    nature: z.string(),
-    uspto_publication_number: z.string(),
-    inventor: z.string(),
-    current_assignee: z.string().optional().nullable(),
-    patent_owners_rights: z.string().optional().nullable(),
-    territorial_scope: z.string().optional().nullable(),
-    uspto_patent_family_members_publication_numbers:  z.string().optional().nullable(),
-    uspto_patent_url: z.string().optional().nullable(),
-    application_date: z
+    "nature": z.string(),
+    'uspto-publication-number': z.string(),
+    "inventor": z.string(),
+    "current-assignee": z.string().optional().nullable(),
+    "patent-owners-rights": z.string().optional().nullable(),
+    "territorial-scope": z.string().optional().nullable(),
+    "uspto-patent-family-members-publication-numbers":  z.string().optional().nullable(),
+    "uspto-patent-url": z.string().optional().nullable(),
+    "application-date": z
     .date().optional(), 
-    issue_date: z
+    "issue-date": z
     .date().optional(), 
-    expiry_date: z
+    "expiry-date": z
     .date().optional(), 
-    title: z.string().optional().nullable(),
-    topics: z.array(z.string()).optional().nullable(),
-    thumbnail: z.string().optional().nullable(),
-    url: z.string().optional().nullable(),
-    uspto_patent_pdf: z.string().optional().nullable(),
+    "title": z.string().optional().nullable(),
+    "topics": z.array(z.string()).optional().nullable(),
+    "thumbnail": z.string().optional().nullable(),
+    "url": z.string().optional().nullable(),
+    "uspto-patent-pdf": z.string().optional().nullable(),
+    "problem-solved-by-the-invention": z.string().optional().nullable(),
   }).strict();
