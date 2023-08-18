@@ -54,21 +54,16 @@ import { z } from "zod";
     patent_owners_rights: z.string().optional().nullable(),
     territorial_scope: z.string().optional().nullable(),
     uspto_patent_family_members_publication_numbers:  z.string().optional().nullable(),
-    external_links: z.string().optional().nullable(),
+    uspto_patent_url: z.string().optional().nullable(),
     application_date: z
     .date().optional(), 
     issue_date: z
     .date().optional(), 
     expiry_date: z
     .date().optional(), 
-    left_content: z
-    .object({
-      title: z.string(),
-      topics: z.array(z.string()).optional().nullable(),
-      description: z.string(),
-      thumbnail: z.string().optional().nullable(),
-    })
-    .optional(),
+    title: z.string().optional().nullable(),
+    topics: z.array(z.string()).optional().nullable(),
+    thumbnail: z.string().optional().nullable(),
     url: z.string().optional().nullable(),
     uspto_patent_pdf: z.string().optional().nullable(),
   }).strict();

@@ -1,4 +1,5 @@
 ---
+title: Tasks scheduling based on triggering event and work lists management
 nature: patent
 uspto_publication_number: US10403399B2
 inventor: Shah N. Shahid
@@ -11,17 +12,12 @@ issue_date: 2019-09-03
 expiry_date: 2038-04-16
 url: "/ip/tasks-scheduling-based-on-triggering-event-and-work-lists-management"
 uspto_patent_pdf: "https://patentimages.storage.googleapis.com/2f/e7/27/f40f5ddb15d76e/US7039898.pdf"
-external_links: https://patents.google.com/patent/US10403399B2
-left_content: 
- title: Tasks scheduling based on triggering event and work lists management
- thumbnail: "/assets-natural/brand/www.netspective.com/ip/US7039898.jpg"
- topics: 
-  - Clinical Workflow Enhancement
-  - Task Scheduling Automation
-  - Automated Care Plans
- description: 
-  Healthcare systems, medical devices, and software often operate in isolation, resulting in siloed patient information, interoperability hurdles, and limited real-time insights. This data fragmentation hampers effective patient care coordination, decision-making, and operational efficiency. In some cases, healthcare providers need something from patients regularly but do not necessarily want a special trip by the healthcare providers to visit the patients every time. However, the current methods and systems do not allow healthcare providers to take care of these issues without having them to visit the patients every time.
-
+uspto_patent_url: https://patents.google.com/patent/US10403399B2
+thumbnail: "/assets-natural/brand/www.netspective.com/ip/US7039898.jpg"
+topics: 
+ - Clinical Workflow Enhancement
+ - Task Scheduling Automation
+ - Automated Care Plans
 ---
 ## Problem solved by the invention
 

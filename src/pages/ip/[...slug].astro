@@ -36,9 +36,9 @@ export function formattedCurrentDate(dateString: string | number | Date) {
     <article class="pt-3 pb-2">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-7">
         <div class="col-span-1 md:col-span-12 lg:col-span-8 curated-content">
-          <h1>{ entry.data.left_content.title }</h1>        
+          <h1>{ entry.data.title }</h1>        
             <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 my-5">
-              <img class="object-cover w-full h-48 md:h-auto md:w-64 p-3" src={ entry.data.left_content.thumbnail } alt="">
+              <img class="object-cover w-full h-48 md:h-auto md:w-64 p-3" src={ entry.data.thumbnail } alt="">
               <div class="flex flex-col justify-between p-4 leading-normal">
                   <!-- <h3 class="font-semibold">Patent Details</h3> -->
                   <div class="mb-1"><span class="text-gray-500 mr-2">
@@ -58,11 +58,10 @@ export function formattedCurrentDate(dateString: string | number | Date) {
 
                     <div class="mb-1"><span class="text-gray-500 mr-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2 inline-block">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                    </svg>Categories:</span><span class="font-medium">{ entry.data.left_content.topics }</span></div>
+                    </svg>Categories:</span><span class="font-medium">{ entry.data.topics }</span></div>
               
               </div>
             </div>
-            {entry.data.left_content.description}
             <Content/>
             <div class="clear"></div>
         </div>
@@ -125,7 +124,7 @@ export function formattedCurrentDate(dateString: string | number | Date) {
                 <aside class="text-sm mt-3 mb-3 px-4 pb-3">
                   <div class="mb-2"><span class="mr-2 font-medium">Territorial Scope:</span><span class="text-gray-500">{entry.data.territorial_scope}</span></div>
                   <div class="mb-2"><span class="mr-2 font-medium">Patent Owner's Rights:</span><span class="text-gray-500">{entry.data.patent_owners_rights}</span></div>
-                  <div class="mb-2"><span class="mr-2 font-medium">External links:</span><span class="text-gray-500"><a href={entry.data.external_links}>{entry.data.external_links}</a></span></div>
+                  <div class="mb-2"><span class="mr-2 font-medium">External link:</span><span class="text-gray-500"><a href={entry.data.uspto_patent_url}>{entry.data.uspto_patent_url}</a></span></div>
                 </aside>
           </div>
         </div>
