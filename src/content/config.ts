@@ -3,7 +3,7 @@ import consultingSevicesCollection from "./consulting-services/_collection";
 import technologySevicesCollection from "./technology-services/_collection";
 import thoughtleadershipSevicesCollection from "./thought-leadership/_collection";
 import solutionsSevicesCollection from "./solutions/_collection";
-import ipSevicesCollection from "./ip/_collection";
+import  intellectualPropertyCollection  from "./ip/_collection";
 /**
  * We define collections outside of config.ts so that they can easily be removed
  * during development or need to be pulled into different Astro projects.
@@ -17,7 +17,7 @@ export const collections = {
   'technology-services': technologySevicesCollection,
   'thought-leadership': thoughtleadershipSevicesCollection,
   'solutions': solutionsSevicesCollection,
-  'ip': ipSevicesCollection
+  'ip': intellectualPropertyCollection
 
 } as const;
 

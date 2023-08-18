@@ -6,6 +6,6 @@ export type AutoRouteKey = keyof typeof autoRoutes;
 const collectionIdentity = 'ip' as const;
 type CollectionEntry = ac.CollectionEntry<typeof collectionIdentity>;
 
-export const ipSevicesCollection = ac.defineCollection({ schema: s.ipSevicesSchema });
+export const intellectualPropertyCollection = ac.defineCollection({ schema: s.intellectualPropertySchema });
 
-export default ipSevicesCollection;
+export default intellectualPropertyCollection;
