@@ -37,9 +37,9 @@ export function formattedCurrentDate(dateString: string | number | Date) {
       <div class="grid grid-cols-1 md:grid-cols-12 gap-7">
         <div class="col-span-1 md:col-span-12 lg:col-span-8 curated-content">
           <h1>{ entry.data.title }</h1>        
-            <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 my-5">
-              <img class="object-cover w-full h-48 md:h-auto md:w-64 p-3" src={ entry.data.thumbnail } alt="">
-              <div class="flex flex-col justify-between py-4 pl-4 pr-6 leading-normal text-lg">
+            <div class="flex flex-col items-center border border-gray-200 rounded-lg shadow md:flex-row bg-gray-100 hover:bg-gray-200 my-5">
+              <img class="object-cover w-full sm:w-1/2 p-3" src={ entry.data.thumbnail } alt="">
+              <div class="flex flex-col justify-between py-4 pl-4 pr-6 text-xl">
                   <!-- <h3 class="font-semibold">Patent Details</h3> -->
                   { entry.data['problem-solved-by-the-invention'] }              
               </div>
