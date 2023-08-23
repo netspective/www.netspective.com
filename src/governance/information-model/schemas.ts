@@ -67,4 +67,10 @@ import { z } from "zod";
     "url": z.string().optional().nullable(),
     "uspto-patent-pdf": z.string().optional().nullable(),
     "problem-solved-by-the-invention": z.string().optional().nullable(),
+    images: z.array(
+      z.object({
+        url: z.string().optional(),
+        type: z.string().optional(),
+      })
+    ),
   }).strict();

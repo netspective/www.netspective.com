@@ -20,6 +20,21 @@ topics:
  - Clinical Workflow Enhancement
  - Task Scheduling Automation
  - Automated Care Plans
+images:
+  - url: 'US7039898-image-1.png'
+    type: png
+  - url: 'US7039898-image-2.png'
+    type: png
+  - url: 'US7039898-image-3.png'
+    type: png
+  - url: 'US7039898-image-4.png'
+    type: png
+  - url: 'US7039898-image-5.png'
+    type: png
+  - url: 'US7039898-image-6.png'
+    type: png
+  - url: 'US7039898-image-7.png'
+    type: png
 ---
 
 The patent offers a transformative method and system for seamless task scheduling, execution, and monitoring, optimizing healthcare workflows. Employing predefined rules in certain environments, real-time notifications, and adaptive updates, it ensures efficient task management, empowering healthcare professionals for timely, patient-centric care without actually visiting the patients each time.
