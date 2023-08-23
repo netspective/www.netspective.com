@@ -40,7 +40,7 @@ export function formattedCurrentDate(dateString: string | number | Date) {
           <h1>{ entry.data.title }</h1>               
             <div class="items-center border border-gray-200 rounded-lg shadow bg-gray-100 hover:bg-gray-200 my-5">
               <div class="grid grid-cols-1 md:grid-cols-12 gap-7 m-4">
-                <div class="col-span-1 md:col-span-6 lg:col-span-6"><img class="object-cover w-full" src={ entry.data.thumbnail } alt=""></div>
+                <div class="col-span-1 md:col-span-6 lg:col-span-6"><a href={ entry.data['uspto-patent-pdf'] } target="_blank"><img class="object-cover w-full" src={ entry.data.thumbnail } alt=""></a></div>
                 <div class="col-span-1 md:col-span-6 lg:col-span-6 text-xl">
                   { entry.data['problem-solved-by-the-invention'] }  
                 </div>
