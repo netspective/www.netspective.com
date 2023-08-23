@@ -79,8 +79,12 @@ export function formattedCurrentDate(dateString: string | number | Date) {
                     <span class="mr-2 font-medium">Current Assignee:</span><span class="text-gray-500">{ entry.data['current-assignee'] }</span>
                   </div>
                   <div class="mb-1">
-                    <span class="mr-2 font-medium">Categories:</span><span class="text-gray-500">{entry.data.topics.join(' ')}</span>
-                  </div>
+                    <span class="mr-2 font-medium">Categories:</span>
+                    {entry.data.topics &&
+                    entry.data.topics.map((topic) => (
+                      <span class="bg-gray-100 text-gray-800 text-xs mr-1 mt-1 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300 inline-block">{topic}</span>                  
+                    ))}
+                  </div> 
                   <div class="mb-1">
                     <span class="mr-2 font-medium">Family Members:</span><span class="text-gray-500">{entry.data['uspto-patent-family-members-publication-numbers'] }</span>
                   </div>
