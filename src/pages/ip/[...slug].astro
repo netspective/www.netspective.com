@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
-console.log(entry.data.images['url']);
+console.log(entry.data.topics);
 const r = route(Astro, { originFsPath: "src/pages/[...slug].astro" }, { entry: {collection: intellectualPropertyCollection, entry } });
 
 export function formatDate(dateString: string | number | Date) {
@@ -79,7 +79,7 @@ export function formattedCurrentDate(dateString: string | number | Date) {
                     <span class="mr-2 font-medium">Current Assignee:</span><span class="text-gray-500">{ entry.data['current-assignee'] }</span>
                   </div>
                   <div class="mb-1">
-                    <span class="mr-2 font-medium">Categories:</span><span class="text-gray-500">{ entry.data.topics }</span>
+                    <span class="mr-2 font-medium">Categories:</span><span class="text-gray-500">{entry.data.topics.join(' ')}</span>
                   </div>
                   <div class="mb-1">
                     <span class="mr-2 font-medium">Family Members:</span><span class="text-gray-500">{entry.data['uspto-patent-family-members-publication-numbers'] }</span>
