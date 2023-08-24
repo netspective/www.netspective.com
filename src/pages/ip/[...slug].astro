@@ -46,6 +46,8 @@ export function formattedCurrentDate(dateString: string | number | Date) {
                 </div>
               </div>
             </div>
+            <h3>{entry.data['abstract-of-the-invention-label']}</h3>
+            <p>{entry.data['abstract-of-the-invention']}</p>
             <Content/>
             <h3>Images ({entry.data.images.length})</h3>
             
@@ -57,6 +59,11 @@ export function formattedCurrentDate(dateString: string | number | Date) {
                       ),
                         )
               }
+            </div>
+            <div>
+              <h3>{entry.data['uspto-patent-citation-label']}</h3>
+              <p>{entry.data['forward-citations']}</p>
+              <p>{entry.data['backward-citations']}</p>
             </div>
             <div class="clear"></div>
         </div>

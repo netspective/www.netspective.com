@@ -47,7 +47,7 @@ import { z } from "zod";
     pdf: z.string().optional().nullable(),
   }).strict();
   export const intellectualPropertySchema = z.object({
-    "nature": z.string(),
+    "uspto-canonical-id-label": z.string(),
     'uspto-publication-number': z.string(),
     "inventor": z.string(),
     "current-assignee": z.string().optional().nullable(),
@@ -67,6 +67,11 @@ import { z } from "zod";
     "url": z.string().optional().nullable(),
     "uspto-patent-pdf": z.string().optional().nullable(),
     "problem-solved-by-the-invention": z.string().optional().nullable(),
+    "abstract-of-the-invention": z.string().optional().nullable(),
+    "forward-citations": z.string().optional().nullable(),
+    "backward-citations": z.string().optional().nullable(),
+    "abstract-of-the-invention-label": z.string().optional().nullable(),
+    "uspto-patent-citation-label": z.string().optional().nullable(),
     images: z.array(
       z.object({
         url: z.string().optional(),
