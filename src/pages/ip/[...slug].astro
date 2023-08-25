@@ -40,14 +40,14 @@ export function formattedCurrentDate(dateString: string | number | Date) {
         <p>
           {entry.data.topics &&
           entry.data.topics.map((topic) => (
-            <span class="bg-[#e5f1fb] text-gray-800 text-sm mr-1 mt-1 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300 inline-block">{topic}</span>                  
+            <span class="text-gray-800 text-sm mr-1 mt-1 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300 inline-block">{topic}</span>                  
           ))}
         </p> 
       </div>    
                   
       <div class="grid grid-cols-1 md:grid-cols-12 gap-7">
         <div class="col-span-1 md:col-span-12 lg:col-span-8 curated-content">
-          <div class="bg-[#e5f1fb] p-5 rounded-lg">
+          <div class="rounded-lg">
             <!-- <div class="items-center border border-gray-200 rounded-lg shadow bg-gray-100 hover:bg-gray-200 my-5">
               <div class="grid grid-cols-1 md:grid-cols-12 gap-7 m-4">
                 <div class="col-span-1 md:col-span-6 lg:col-span-6"><a href={ entry.data['uspto-patent-pdf'] } target="_blank"><img class="object-cover w-full" src={ entry.data.thumbnail } alt=""></a></div>
