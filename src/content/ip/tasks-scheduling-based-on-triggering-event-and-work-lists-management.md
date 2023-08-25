@@ -73,7 +73,7 @@ external-links:
 downloadable-documents: 
   - anchor_text: Download PDF
     link_url: https://patentimages.storage.googleapis.com/28/32/0a/6f98f67c215065/US10403399.pdf
-  - anchor_text: Download Claim Sumamries
+  - anchor_text: Download Claim Summaries
     link_url: 
 ---
 
