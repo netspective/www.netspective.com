@@ -34,24 +34,32 @@ export function formattedCurrentDate(dateString: string | number | Date) {
 <NetspectiveLayout route={r}>
   <main>
     <section class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
-    <article class="pt-3 pb-2">
+    <article class="pt-3 pb-2">  
+      <div class="curated-content">
+        <h1>{ entry.data.title }</h1>   
+        <p>
+          {entry.data.topics &&
+          entry.data.topics.map((topic) => (
+            <span class="bg-[#e5f1fb] text-gray-800 text-sm mr-1 mt-1 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300 inline-block">{topic}</span>                  
+          ))}
+        </p> 
+      </div>    
+                  
       <div class="grid grid-cols-1 md:grid-cols-12 gap-7">
         <div class="col-span-1 md:col-span-12 lg:col-span-8 curated-content">
-          <h1>{ entry.data.title }</h1>               
-            <div class="items-center border border-gray-200 rounded-lg shadow bg-gray-100 hover:bg-gray-200 my-5">
+          <div class="bg-[#e5f1fb] p-5 rounded-lg">
+            <!-- <div class="items-center border border-gray-200 rounded-lg shadow bg-gray-100 hover:bg-gray-200 my-5">
               <div class="grid grid-cols-1 md:grid-cols-12 gap-7 m-4">
                 <div class="col-span-1 md:col-span-6 lg:col-span-6"><a href={ entry.data['uspto-patent-pdf'] } target="_blank"><img class="object-cover w-full" src={ entry.data.thumbnail } alt=""></a></div>
                 <div class="col-span-1 md:col-span-6 lg:col-span-6 text-xl">
                   { entry.data['problem-solved-by-the-invention'] }  
                 </div>
               </div>
-            </div>
-            <h3>{entry.data['abstract-of-the-invention-label']}</h3>
-            <p>{entry.data['abstract-of-the-invention']}</p>
+            </div> -->
             <Content/>
             <h3>Images ({entry.data.images.length})</h3>
             
-            <div class="flex flex-col items-center border border-gray-200 rounded-lg shadow md:flex-row bg-gray-100 hover:bg-gray-200 my-5 p-2 overflow-x-auto">
+            <div class="flex flex-col items-center border border-[#c3d6e5] rounded-lg shadow md:flex-row bg-[#c3d6e5] hover:bg-[#a5bbcc] my-5 p-2 overflow-x-auto">
               {
                 entry.data.images.map(
                       (post) => (<img class="object-cover w-full sm:w-36 h-44 m-1" src={"/assets-natural/brand/www.netspective.com/ip/" + post.url}alt="" />
@@ -60,74 +68,96 @@ export function formattedCurrentDate(dateString: string | number | Date) {
                         )
               }
             </div>
-            <div>
+            <!-- <div>
               <h3>{entry.data['uspto-patent-citation-label']}</h3>
               <p>{entry.data['forward-citations']}</p>
               <p>{entry.data['backward-citations']}</p>
+            </div> -->
             </div>
             <div class="clear"></div>
         </div>
         <div class="col-span-1 md:col-span-12 lg:col-span-4 right-section">        
           <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 overflow-hidden">
-            <div class="flex items-center justify-between bg-orange-600 text-white px-4 py-3">
-                <div class="text-2xl font-medium"> { entry.data['uspto-publication-number'] }</div>
+            <div class="flex items-center justify-between bg-gradient-to-t from-red-900 to-red-600 text-white px-4 py-3">
+                <div class="text-2xl font-medium"> { entry.data['uspto-patent-number'] }</div>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-12 gap-4 px-4 py-2 bg-orange-700 text-white text-sm">
+          <div class="bg-[#e5f1fb] p-3 m-2 rounded-lg">
+            <a href={ entry.data['uspto-patent-pdf'] } target="_blank"><img class="object-cover w-full" src={ entry.data.thumbnail } alt=""></a>
+          </div>
+          <!-- <div class="grid grid-cols-1 md:grid-cols-12 gap-4 px-4 py-2 bg-orange-700 text-white text-sm">
             <div class="col-span-1 md:col-span-12"><a href={ entry.data['uspto-patent-pdf'] } target="_blank" class="text-white hover:text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-2 inline-block">
               <path fill-rule="evenodd" d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5H5.625zM7.5 15a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 017.5 15zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H8.25z" clip-rule="evenodd" />
               <path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z" />
             </svg>Download PDF</a></div>
-            </div>
-                <aside class="text-sm px-4 py-3">
+            </div> -->
+                <aside class="text-sm bg-[#e5f1fb] p-3 m-2 rounded-lg">
                   <div class="mb-1">
                     <span class="mr-2 font-medium">Inventor:</span><span class="text-gray-500"><a href="#.">{ entry.data.inventor }</a></span>
                   </div>
                   <div class="mb-1">
-                    <span class="mr-2 font-medium">Current Assignee:</span><span class="text-gray-500">{ entry.data['current-assignee'] }</span>
-                  </div>
-                  <div class="mb-1">
-                    <span class="mr-2 font-medium">Categories:</span>
-                    {entry.data.topics &&
-                    entry.data.topics.map((topic) => (
-                      <span class="bg-gray-100 text-gray-800 text-xs mr-1 mt-1 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300 inline-block">{topic}</span>                  
-                    ))}
-                  </div> 
+                    <span class="mr-2 font-medium">Current Assignee:</span><span class="text-gray-500">{ entry.data['owner-current-assignee'] }</span>
+                  </div>                  
                   <div class="mb-1">
                     <span class="mr-2 font-medium">Family Members:</span><span class="text-gray-500">{entry.data['uspto-patent-family-members-publication-numbers'] }</span>
                   </div>
                 </aside>
-                <hr>
-                <aside class="text-sm mt-3 mb-3">
-                  <span class="font-medium block px-4 pb-3">Application { entry.data['uspto-publication-number'] }events</span>
-                  <ul role="list">
-                    <li class="flex justify-between pb-2 px-4 leading-5">
-                      <div class="flex-shrink-0 font-medium">{formattedCurrentDate(entry.data['issue-date'])}</div>
-                      <div class="flex w-0 flex-1 items-center">
-                        <div class="ml-4 flex min-w-0 flex-1 gap-2 text-gray-500">Application filed by {entry.data['application-date']}</div>
-                      </div>
-                    </li>
-                    <li class="flex justify-between pb-2 px-4 leading-5">
-                      <div class="flex-shrink-0 font-medium">{formattedCurrentDate(entry.data['expiry-date'])}</div>
-                      <div class="flex w-0 flex-1 items-center">
-                        <div class="ml-4 flex min-w-0 flex-1 gap-2 text-gray-500">Publication of  { entry.data['uspto-publication-number'] }</div>
-                      </div>
-                    </li>
-                    <li class="flex justify-between pb-2 px-4 leading-5">
-                      <div class="flex-shrink-0 font-medium">{formattedCurrentDate(entry.data['application-date'])}</div>
-                      <div class="flex w-0 flex-1 items-center">
-                        <div class="ml-4 flex min-w-0 flex-1 gap-2 text-gray-500">Application granted</div>
-                      </div>
-                    </li>
-                  </ul>
+                <aside class="text-sm bg-[#e5f1fb] p-3 m-2 rounded-lg">
+                  <!-- <span class="font-medium block px-4 pb-3">Application { entry.data['uspto-patent-number'] }events</span> -->
+                  <div class="mb-1">
+                    <span class="mr-2 font-medium">Application-date:</span><span class="text-gray-500">{formattedCurrentDate(entry.data['application-date'])}</span>
+                  </div>
+                  <div class="mb-1">
+                    <span class="mr-2 font-medium">Issue-date:</span><span class="text-gray-500">{formattedCurrentDate(entry.data['issue-date'])}</span>
+                  </div>
+                  <div class="mb-1">
+                    <span class="mr-2 font-medium">Expiry-date:</span><span class="text-gray-500">{formattedCurrentDate(entry.data['expiry-date'])}</span>
+                  </div>
                 </aside>
-                <hr>
-                <aside class="text-sm mt-3 mb-3 px-4 pb-3">
+                <aside class="text-sm bg-[#e5f1fb] p-3 m-2 rounded-lg">
+                  <div class="mb-1">
+                    
+                    <span class="mr-2 font-medium">Forward-citations:</span>
+                    {entry.data['forward-citations'] &&
+                          entry.data['forward-citations'].map((citation, index) => (
+                            <div key={index}>
+                              {/* Render content related to each citation here */}
+                              <span class="text-gray-500">{citation}</span>
+                            </div>
+                    ))}
+                  </div>
+                </aside>                
+                <aside class="text-sm bg-[#e5f1fb] p-3 m-2 rounded-lg">
                   <div class="mb-2"><span class="mr-2 font-medium">Territorial Scope:</span><span class="text-gray-500">{entry.data['territorial-scope']}</span></div>
                   <div class="mb-2"><span class="mr-2 font-medium">Patent Owner's Rights:</span><span class="text-gray-500">{entry.data['patent-owners-rights']}</span></div>
-                  <div class="mb-2"><span class="mr-2 font-medium">External link:</span><span class="text-gray-500 break-all"><a href={entry.data['uspto-patent-url']}>{entry.data['uspto-patent-url']}</a></span></div>
+                  <div class="mb-2"><span class="mr-2 font-medium">External link:</span>
+                    {
+                      entry.data['external-links'].map((post, index) => (
+                        <span key={index} class="text-gray-500 break-all">
+                          <a href={post['link_url']} target="_blank">{post['anchor_text']}</a>
+                          {index !== entry.data['external-links'].length - 1 && ' '}
+                        </span>
+                      ))
+                    }
+                  </div>
                 </aside>
           </div>
+
+          <aside class="mt-3">
+            {
+              entry.data['downloadable-documents'].map((post, index) => (
+                <a href={post['link_url']}>
+                <button key={index} type="button"  class= { index == 0 ? "text-white bg-[#DC2626] hover:bg-[#c31515] font-medium rounded-lg text-base px-5 py-2.5 text-center mb-2 items-center w-full" : "text-white bg-[#5F6DE9] hover:bg-[#4754cc] font-medium rounded-lg text-base px-5 py-2.5 text-center mb-2 items-center w-full" }  >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-1 inline-block">
+                    <path fill-rule="evenodd" d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5H5.625zM7.5 15a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 017.5 15zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H8.25z" clip-rule="evenodd" />
+                    <path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z" />
+                  </svg>
+                  {post['anchor_text']} 
+              </button></a>
+              ))
+            }
+          </aside>
         </div>
+
       </div>
     </article>
     <!-- <div class="grid grid-cols-1 md:grid-cols-12 gap-7 my-3 curated-content text-sm">

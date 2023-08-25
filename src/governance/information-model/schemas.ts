@@ -48,9 +48,10 @@ import { z } from "zod";
   }).strict();
   export const intellectualPropertySchema = z.object({
     "uspto-canonical-id-label": z.string(),
-    'uspto-publication-number': z.string(),
+    'uspto-patent-number': z.string(),
     "inventor": z.string(),
-    "current-assignee": z.string().optional().nullable(),
+    "owner-current-assignee": z.string().optional().nullable(),
+    "patent-status": z.string().optional().nullable(),
     "patent-owners-rights": z.string().optional().nullable(),
     "territorial-scope": z.string().optional().nullable(),
     "uspto-patent-family-members-publication-numbers":  z.string().optional().nullable(),
@@ -68,10 +69,22 @@ import { z } from "zod";
     "uspto-patent-pdf": z.string().optional().nullable(),
     "problem-solved-by-the-invention": z.string().optional().nullable(),
     "abstract-of-the-invention": z.string().optional().nullable(),
-    "forward-citations": z.string().optional().nullable(),
-    "backward-citations": z.string().optional().nullable(),
+    "forward-citations": z.array(z.string()).optional().nullable(),
+    "backward-citations": z.array(z.string()).optional().nullable(),
     "abstract-of-the-invention-label": z.string().optional().nullable(),
     "uspto-patent-citation-label": z.string().optional().nullable(),
+    "external-links": z.array(
+      z.object({
+        "anchor_text": z.string().optional().nullable(),
+        "link_url": z.string().optional().nullable(),
+      })
+    ),
+    "downloadable-documents": z.array(
+      z.object({
+        "anchor_text": z.string().optional().nullable(),
+        "link_url": z.string().optional().nullable(),
+      })
+    ),
     images: z.array(
       z.object({
         url: z.string().optional(),
