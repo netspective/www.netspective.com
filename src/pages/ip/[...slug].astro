@@ -59,7 +59,7 @@ export function formattedCurrentDate(dateString: string | number | Date) {
             <Content/>
             <h3>Images ({entry.data.images.length})</h3>
             
-            <div class="flex flex-col items-center border border-[#e5f1fb] rounded-lg shadow md:flex-row bg-[#e5f1fb] hover:bg-[#c3d6e5] my-5 p-2 overflow-x-auto">
+            <div class="flex flex-col items-center border border-[#e5f1fb] rounded-lg shadow md:flex-row my-5 p-2 overflow-x-auto">
               {
                 entry.data.images.map(
                       (post) => (<img class="object-cover w-full sm:w-36 h-44 m-1" src={"/assets-natural/brand/www.netspective.com/ip/" + post.url}alt="" />
