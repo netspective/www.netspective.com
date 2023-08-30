@@ -81,7 +81,7 @@ export function formattedCurrentDate(dateString: string | number | Date) {
             <div class="flex items-center justify-center bg-gradient-to-t from-red-900 to-red-600 text-white px-4 py-3">
                 <div class="text-2xl font-medium"> { entry.data['uspto-patent-number'] }</div>
           </div>
-          <div class="p-3 m-2 rounded-lg">
+          <div class="rounded-lg">
             <a href={ entry.data['uspto-patent-pdf'] } target="_blank"><img class="object-cover w-full" src={ entry.data.thumbnail } alt=""></a>
           </div>
           <!-- <div class="grid grid-cols-1 md:grid-cols-12 gap-4 px-4 py-2 bg-orange-700 text-white text-sm">
