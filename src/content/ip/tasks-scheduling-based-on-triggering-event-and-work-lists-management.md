@@ -147,17 +147,55 @@ All these changes and adjustments are made by the system to make sure things run
     <p>It is yet another object of the present invention to provide a unified system of processing, testing, and documenting these facets. Still another object of the present invention is to provide a computer system and method for automatically generating and processing software code, object instantiations, testable functionality, and implementation documentation from a single set of declarative executable specifications. Yet another object of the present invention is to provide a computer system that allows a software application developer the ability to declare a single set of executable specifications and receive full unit tests, implementation documentation, and end-user application code from the set of specifications. Another object of the present invention is to provide a computer system for performing software application development that allows the executable specifications to be reused across several projects.</p>
     <p><b>Brief description of the drawings</b></p>
     <p>The foregoing and other objects, aspects and advantages will be better understood from the following detailed description of a preferred embodiment(s) of the invention with reference to the drawings, in which:</p>
-    <p>FIG. 1 is a system diagram illustrating a preferred embodiment of the present invention;</p>
-    <p>FIG. 2 is a system diagram illustrating a preferred embodiment of the present invention;</p>
-    <p>FIG. 3 is a system diagram illustrating a preferred embodiment of the present invention;</p>
-    <p>FIG. 4 is a system diagram illustrating a preferred embodiment of the present invention;</p>
-    <p>FIG. 5 is a system diagram illustrating a preferred embodiment of the present invention;</p>
-    <p>FIG. 6 is a system diagram illustrating a preferred embodiment of the present invention;</p>
-    <p>FIG. 7 is a flow diagram illustrating a preferred method of the present invention;</p>
-    <p>FIG. 8 is a flow diagram illustrating a preferred method of the present invention;</p>
-    <p>FIG. 9 is a flow diagram illustrating a preferred method of the present invention;</p>
-    <p>FIG. 10 is a flow diagram illustrating a preferred method of the present invention;</p>
-    </div>
+    <p>
+      <figure>
+        <img src="assets-natural/brand/www.netspective.com/ip/US7039898-image-2.png" alt="Alt Text">
+        <figcaption>FIG. 1 is a system diagram illustrating a preferred embodiment of the present invention;</figcaption>
+      </figure>
+    </p>
+    <p>
+      <figure>
+        <img src="assets-natural/brand/www.netspective.com/ip/US7039898-image-3.png" alt="Alt Text">
+        <figcaption>FIG. 2 is a system diagram illustrating a preferred embodiment of the present invention;</figcaption>
+      </figure>
+    </p>
+    <p>
+      <figure>
+        <img src="assets-natural/brand/www.netspective.com/ip/US7039898-image-4.png" alt="Alt Text">
+        <figcaption>FIG. 3 is a system diagram illustrating a preferred embodiment of the present invention;</figcaption>
+      </figure></p>
+    <p> 
+      <figure>
+        <img src="assets-natural/brand/www.netspective.com/ip/US7039898-image-5.png" alt="Alt Text">
+        <figcaption>FIG. 4 is a system diagram illustrating a preferred embodiment of the present invention;
+        FIG. 5 is a system diagram illustrating a preferred embodiment of the present invention;</figcaption>
+      </figure>
+    </p>
+    <p>
+      <figure>
+        <img src="assets-natural/brand/www.netspective.com/ip/US7039898-image-6.png" alt="Alt Text">
+        <figcaption>FIG. 6 is a system diagram illustrating a preferred embodiment of the present invention;</figcaption>
+      </figure>
+    </p>
+    <p>
+      <figure>
+        <img src="assets-natural/brand/www.netspective.com/ip/US7039898-image-7.png" alt="Alt Text">
+        <figcaption>FIG. 7 is a flow diagram illustrating a preferred method of the present invention;</figcaption>
+      </figure>
+    </p>
+    <p>
+      <figure>
+        <img src="assets-natural/brand/www.netspective.com/ip/US7039898-image-8.png" alt="Alt Text">
+        <figcaption>FIG. 8 is a flow diagram illustrating a preferred method of the present invention;</figcaption>
+      </figure>
+    </p>
+    <p>
+      <figure>
+        <img src="assets-natural/brand/www.netspective.com/ip/US7039898-image-9.png" alt="Alt Text">
+        <figcaption>FIG. 9 is a flow diagram illustrating a preferred method of the present invention; FIG. 10 is a flow diagram illustrating a preferred method of the present invention</figcaption>
+      </figure>
+    </p>
+  </div>
   <div class="col-span-1 md:col-span-12 lg:col-span-6">
     <h4>Claims (19)</h4>
     <p>1. A computer system for performing reusable software application development, said computer system comprising a multi-component architecture comprising data, wherein said multi-component architecture further comprises:</p>
