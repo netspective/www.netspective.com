@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
-console.log(entry.data.topics);
+//console.log(entry.data.topics);
 const r = route(Astro, { originFsPath: "src/pages/[...slug].astro" }, { entry: {collection: intellectualPropertyCollection, entry } });
 
 export function formatDate(dateString: string | number | Date) {
@@ -79,7 +79,7 @@ export function formattedCurrentDate(dateString: string | number | Date) {
             <div class="clear"></div>
         </div>
         <div class="col-span-1 md:col-span-12 lg:col-span-4 right-section">        
-          <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 overflow-hidden">
+          <div class="w-full bg-white border border-gray-200 rounded-t-lg shadow dark:bg-gray-800 dark:border-gray-700 overflow-hidden mb-2">
             <div class="flex items-center justify-center bg-gradient-to-t from-red-900 to-red-600 text-white px-4 py-3">
                 <div class="text-2xl font-medium"> { entry.data['uspto-patent-number'] }</div>
           </div>
@@ -92,58 +92,58 @@ export function formattedCurrentDate(dateString: string | number | Date) {
               <path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z" />
             </svg>Download PDF</a></div>
             </div> -->
-                <aside class="text-sm bg-[#e5f1fb] p-3 m-2 rounded-lg">
-                  <div class="mb-1">
-                    <span class="mr-2 font-medium">Inventor:</span><span class="text-gray-500"><a href="#.">{ entry.data.inventor }</a></span>
-                  </div>
-                  <div class="mb-1">
-                    <span class="mr-2 font-medium">Current Assignee:</span><span class="text-gray-500">{ entry.data['owner-current-assignee'] }</span>
-                  </div>                  
-                  <div class="mb-1">
-                    <span class="mr-2 font-medium">Family Members:</span><span class="text-gray-500">{entry.data['uspto-patent-family-members-publication-numbers'] }</span>
-                  </div>
-                </aside>
-                <aside class="text-sm bg-[#e5f1fb] p-3 m-2 rounded-lg">
-                  <!-- <span class="font-medium block px-4 pb-3">Application { entry.data['uspto-patent-number'] }events</span> -->
-                  <div class="mb-1">
-                    <span class="mr-2 font-medium">Application-date:</span><span class="text-gray-500">{formattedCurrentDate(entry.data['application-date'])}</span>
-                  </div>
-                  <div class="mb-1">
-                    <span class="mr-2 font-medium">Issue-date:</span><span class="text-gray-500">{formattedCurrentDate(entry.data['issue-date'])}</span>
-                  </div>
-                  <div class="mb-1">
-                    <span class="mr-2 font-medium">Expiry-date:</span><span class="text-gray-500">{formattedCurrentDate(entry.data['expiry-date'])}</span>
-                  </div>
-                </aside>
-                <aside class="text-sm bg-[#e5f1fb] p-3 m-2 rounded-lg">
-                  <div class="mb-1">
-                    
-                    <span class="mr-2 font-medium">Forward-citations:</span>
-                    {entry.data['forward-citations'] &&
-                          entry.data['forward-citations'].map((citation, index) => (
-                            <div key={index}>
-                              {/* Render content related to each citation here */}
-                              <span class="text-gray-500">{citation}</span>
-                            </div>
-                    ))}
-                  </div>
-                </aside>                
-                <aside class="text-sm bg-[#e5f1fb] p-3 m-2 rounded-lg">
-                  <div class="mb-2"><span class="mr-2 font-medium">Territorial Scope:</span><span class="text-gray-500">{entry.data['territorial-scope']}</span></div>
-                  <div class="mb-2"><span class="mr-2 font-medium">Patent Owner's Rights:</span><span class="text-gray-500">{entry.data['patent-owners-rights']}</span></div>
-                  <div class="mb-2"><span class="mr-2 font-medium">External link:</span>
-                    {
-                      entry.data['external-links'].map((post, index) => (
-                        <span key={index} class="text-gray-500 break-all">
-                          <a href={post['link_url']} target="_blank">{post['anchor_text']}</a>
-                          {index !== entry.data['external-links'].length - 1 && ' '}
-                        </span>
-                      ))
-                    }
-                  </div>
-                </aside>
+                
           </div>
-
+          <aside class="text-sm bg-[#e5f1fb] p-3 mt-2">
+            <div class="mb-1">
+              <span class="mr-2 font-medium">Inventor:</span><span class="text-gray-500"><a href="#.">{ entry.data.inventor }</a></span>
+            </div>
+            <div class="mb-1">
+              <span class="mr-2 font-medium">Current Assignee:</span><span class="text-gray-500">{ entry.data['owner-current-assignee'] }</span>
+            </div>                  
+            <div class="mb-1">
+              <span class="mr-2 font-medium">Family Members:</span><span class="text-gray-500">{entry.data['uspto-patent-family-members-publication-numbers'] }</span>
+            </div>
+          </aside>
+          <aside class="text-sm bg-[#e5f1fb] p-3 mt-2">
+            <!-- <span class="font-medium block px-4 pb-3">Application { entry.data['uspto-patent-number'] }events</span> -->
+            <div class="mb-1">
+              <span class="mr-2 font-medium">Application-date:</span><span class="text-gray-500">{formattedCurrentDate(entry.data['application-date'])}</span>
+            </div>
+            <div class="mb-1">
+              <span class="mr-2 font-medium">Issue-date:</span><span class="text-gray-500">{formattedCurrentDate(entry.data['issue-date'])}</span>
+            </div>
+            <div class="mb-1">
+              <span class="mr-2 font-medium">Expiry-date:</span><span class="text-gray-500">{formattedCurrentDate(entry.data['expiry-date'])}</span>
+            </div>
+          </aside>
+          <aside class="text-sm bg-[#e5f1fb] p-3 mt-2">
+            <div class="mb-1">
+              
+              <span class="mr-2 font-medium">Forward-citations:</span>
+              {entry.data['forward-citations'] &&
+                    entry.data['forward-citations'].map((citation, index) => (
+                      <div key={index}>
+                        {/* Render content related to each citation here */}
+                        <span class="text-gray-500">{citation}</span>
+                      </div>
+              ))}
+            </div>
+          </aside>                
+          <aside class="text-sm bg-[#e5f1fb] p-3 mt-2">
+            <div class="mb-2"><span class="mr-2 font-medium">Territorial Scope:</span><span class="text-gray-500">{entry.data['territorial-scope']}</span></div>
+            <div class="mb-2"><span class="mr-2 font-medium">Patent Owner's Rights:</span><span class="text-gray-500">{entry.data['patent-owners-rights']}</span></div>
+            <div class="mb-2"><span class="mr-2 font-medium">External link:</span>
+              {
+                entry.data['external-links'].map((post, index) => (
+                  <span key={index} class="text-gray-500 break-all">
+                    <a href={post['link_url']} target="_blank">{post['anchor_text']}</a>
+                    {index !== entry.data['external-links'].length - 1 && ' '}
+                  </span>
+                ))
+              }
+            </div>
+          </aside>
           <aside class="mt-3">
             {
               entry.data['downloadable-documents'].map((post, index) => (
