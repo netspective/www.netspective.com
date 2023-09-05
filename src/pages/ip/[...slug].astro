@@ -2,7 +2,7 @@
 import NetspectiveLayout from "../../layouts/ds/tailwind/NetspectiveLayout.astro";
 import { route } from "../../lib/native/route";
 import { getCollection } from "astro:content";
-
+import Swiper from '../../components/native/www.netspective.com/Swiper';
 export const intellectualPropertyCollection = "ip" as const; // export required because Astro needs it in getStaticPaths()
 export const intellectualPropertyCollectionEntries = await getCollection<typeof intellectualPropertyCollection>(intellectualPropertyCollection);
 export async function getStaticPaths() {
@@ -31,6 +31,75 @@ export function formattedCurrentDate(dateString: string | number | Date) {
     return `${year}-${month}-${day}`;
   }
 ---
+<style is:global>
+  #app {
+  height: 100%;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #666;
+  height: 152px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin: 20px auto;
+}
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
+.swiper-button-prev, .swiper-button-next {
+    color: #fff;
+    background: #e92b05;
+    border-radius: 50px;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    background: #ea580c;
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 16px;
+}
+.swiper-button-prev, .swiper-button-next {
+    top: var(--swiper-navigation-top-offset, 28%);
+}
+</style>
 <NetspectiveLayout route={r}>
   <main>
     <section class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
@@ -57,6 +126,7 @@ export function formattedCurrentDate(dateString: string | number | Date) {
               </div>
             </div> -->
             <Content/>
+            <Swiper client:load  data-images={entry.data.images}/>
             <!--
             <h3>Images ({entry.data.images.length})</h3>
             
@@ -216,7 +286,7 @@ export function formattedCurrentDate(dateString: string | number | Date) {
         <p>8. The method of claim 6, wherein said step of providing a set of keywords and attributes comprises generating a set of user interface forms, fields, and validation rules, and wherein said method enables an operator to describe components of a presentation and interface by receiving input from a user.</p>
       </div>
     </div> -->
-    </section>
+
+  </section>
   </main>
 </NetspectiveLayout>
-
