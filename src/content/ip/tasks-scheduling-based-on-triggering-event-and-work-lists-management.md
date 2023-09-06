@@ -190,8 +190,8 @@ This system is user-friendly. It's like having a tool that can be adjusted to fi
 Even patients with chronic conditions can benefit. They can manage their health using this system from home. It can remind them to take medicine, exercise, or even stick to a diet.
 
 Industries like biotech and life sciences can use this system to keep track of things like drug research tasks and clinical trials. It ensures that important steps are taken and that rules are followed. Even social media managers can benefit. They can use the system to manage their tasks, like planning posts and campaigns.
-
-<div class="grid grid-cols-1 md:grid-cols-12 gap-7 my-3 curated-content text-sm">
+###@@####
+<div id="two-col-sep" class="grid grid-cols-1 md:grid-cols-12 gap-7 my-3 curated-content text-sm">
   <div class="col-span-1 md:col-span-12 lg:col-span-6">
     <h4>Description</h4>
     <p><b>CROSS-REFERENCE TO RELATED APPLICATIONS</b></p>
@@ -233,7 +233,7 @@ Industries like biotech and life sciences can use this system to keep track of t
 <div class="curated-content text-sm">
 <p><b>BRIEF DESCRIPTION OF THE DRAWINGS</b></p>
 <p>In the drawings, like numerals describe similar components substantially throughout the several views. The drawings illustrate generally, by way of an example, but not by a way of limitation, various embodiments.</p>
-<p><a href="/ip/tasks-scheduling-based-on-triggering-event-and-work-lists-management#fig1A">FIG. 1A illustrates an exemplary architecture for managing healthcare functions in accordance with an embodiment herein;</a></p>
+<p><a href="./#fig1A">FIG. 1A illustrates an exemplary architecture for managing healthcare functions in accordance with an embodiment herein;</a></p>
 <p><a href="/ip/tasks-scheduling-based-on-triggering-event-and-work-lists-management#fig1B">FIG. 1B illustrates an exemplary architecture for managing healthcare functions in accordance with an embodiment herein;</a></p>
 <p><a href="/ip/tasks-scheduling-based-on-triggering-event-and-work-lists-management#fig2">FIG. 2 illustrates a detailed block diagram of a processing circuit among other things, in accordance with an embodiment herein;</a></p>
 <p><a href="/ip/tasks-scheduling-based-on-triggering-event-and-work-lists-management#fig3">FIG. 3 illustrates a method flowchart for facilitating scheduling and performance of a healthcare task, in accordance with an embodiment herein;</a></p>

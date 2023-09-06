@@ -2,6 +2,7 @@
 import NetspectiveLayout from "../../layouts/ds/tailwind/NetspectiveLayout.astro";
 import { route } from "../../lib/native/route";
 import { getCollection } from "astro:content";
+import { marked } from 'marked';
 import Swiper from '../../components/native/www.netspective.com/Swiper';
 export const intellectualPropertyCollection = "ip" as const; // export required because Astro needs it in getStaticPaths()
 export const intellectualPropertyCollectionEntries = await getCollection<typeof intellectualPropertyCollection>(intellectualPropertyCollection);
@@ -13,7 +14,10 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
-//console.log(entry.data.topics);
+const splittedContent = entry.body.split("###@@####");
+// console.log(splittedContent[0]);
+const contentFirstPortion = marked.parse(splittedContent[0]);
+const contentSecondPortion = marked.parse(splittedContent[1]);
 const r = route(Astro, { originFsPath: "src/pages/[...slug].astro" }, { entry: {collection: intellectualPropertyCollection, entry } });
 
 export function formatDate(dateString: string | number | Date) {
@@ -63,7 +67,6 @@ export function formattedCurrentDate(dateString: string | number | Date) {
 
 .swiper {
   width: 100%;
-  height: 300px;
   margin: 20px auto;
 }
 .append-buttons {
@@ -97,7 +100,7 @@ export function formattedCurrentDate(dateString: string | number | Date) {
     font-size: 16px;
 }
 .swiper-button-prev, .swiper-button-next {
-    top: var(--swiper-navigation-top-offset, 28%);
+    top: var(--swiper-navigation-top-offset, 55%);
 }
 </style>
 <NetspectiveLayout route={r}>
@@ -125,8 +128,12 @@ export function formattedCurrentDate(dateString: string | number | Date) {
                 </div>
               </div>
             </div> -->
-            <Content/>
+            <!-- <Content/> -->
+            <article set:html={contentFirstPortion} />
+            <p class="text-lg"><b>Want to read original full patent text?</b></p>
             <Swiper client:load  data-images={entry.data.images}/>
+            <article set:html={contentSecondPortion} />
+            <!-- <p set:html={splittedContent[1]}></p> -->
             <!--
             <h3>Images ({entry.data.images.length})</h3>
             
