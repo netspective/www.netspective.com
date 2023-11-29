@@ -17,10 +17,5 @@ export const seniorManagement: Props[] = [
     name: "Sarji R Mohammedali",
     designation: "Director of Engineering",
     image: "/assets-natural/brand/www.netspective.com/team/Sarji-R-Mohammedali.jpg",
-   },
-  {
-    name: "Don Lee",
-    designation: "Director of Integration",
-    image: "/assets-natural/brand/www.netspective.com/team/Don-Lee.jpg",
-  }
+   }
 ];
