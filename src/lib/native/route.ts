@@ -17,14 +17,14 @@ export const wsEditorEnvConfig = import.meta.env.UPI_WS_EDITOR
   ? wsEditorResolverSchema.parse(import.meta.env.UPI_WS_EDITOR)
   : undefined;
 
-export const wsEditorResolver = wsEditorEnvConfig
-  ? ws.workspaceEditorResolver(wsEditorEnvConfig, {
-      vscodeWslRemoteDistro: () =>
-        import.meta.env.UPI_WS_EDITOR_VSCODE_REMOTE_DISTRO,
-      vscodeSsshRemoteHostname: () =>
-        import.meta.env.UPI_WS_EDITOR_VSCODE_REMOTE_HOSTNAME,
-    })
-  : () => undefined;
+// export const wsEditorResolver = wsEditorEnvConfig
+//   ? ws.workspaceEditorResolver(wsEditorEnvConfig, {
+//       vscodeWslRemoteDistro: () =>
+//         import.meta.env.UPI_WS_EDITOR_VSCODE_REMOTE_DISTRO,
+//       vscodeSsshRemoteHostname: () =>
+//         import.meta.env.UPI_WS_EDITOR_VSCODE_REMOTE_HOSTNAME,
+//     })
+//   : () => undefined;
 
 
 export type OriginContentEntry = { readonly slug: string; readonly id: string };
@@ -146,17 +146,17 @@ export function routeWsEditorTarget<
 >(route: Route<Collection, Entry>) {
   if (!wsEditorEnvConfig) return undefined;
   const provenance = route.provenance;
-  if (provenance.entry) {
-    return wsEditorResolver(
-      cwd() +
-        "/src/content/" +
-        provenance.collection +
-        "/" +
-        provenance.entry.id,
-    );
-  } else {
-    return wsEditorResolver(cwd() + "/" + provenance.originFsPath);
-  }
+  // if (provenance.entry) {
+  //   return wsEditorResolver(
+  //     cwd() +
+  //       "/src/content/" +
+  //       provenance.collection +
+  //       "/" +
+  //       provenance.entry.id,
+  //   );
+  // } else {
+  //   return wsEditorResolver(cwd() + "/" + provenance.originFsPath);
+  // }
 }
 
 export const uaFlexibleURL = (relativePath: string) => {
@@ -192,7 +192,7 @@ export function routes<
     uaFlexibleURL,
     uaHomeURL,
     uaAssetURL,
-    wsEditorResolver,
+    // wsEditorResolver,
   };
 }
 
