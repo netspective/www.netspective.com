@@ -11,4 +11,4 @@ keywords: "Medical Technology, Healthcare & Government IT"
 path: "/www.netspective.com/netspective.tv/Shahid_Shah_on_Healthcare_IT_at_HIMSS_Dell_Healthcare.jpg"
 slugid: the-future-of-information-driven-healthcare
 ---
-![shahid](knowledge-center/assets-natural/brand/www.netspective.com/netspective.tv/Shahid_Shah_on_Healthcare_IT_at_HIMSS_Dell_Healthcare.jpg#center)
+![shahid](/assets-natural/brand/www.netspective.com/netspective.tv/Shahid_Shah_on_Healthcare_IT_at_HIMSS_Dell_Healthcare.jpg#center)
