@@ -1,6 +1,7 @@
 ---
 import ScrollToTop  from "../../../components/native/www.netspective.com/ScrollToTop";
 
+const year = new Date().getFullYear();
 ---
 <footer class="bg-gray-100">
   <div class="mx-auto max-w-7xl overflow-hidden px-6 py-12 lg:px-8">
@@ -29,7 +30,7 @@ import ScrollToTop  from "../../../components/native/www.netspective.com/ScrollT
       
     </nav>
     
-    <p class="mt-10 text-center text-base leading-5 text-gray-500">Healthcare IT Consulting &amp; Medical Technology Solutions - Netspective.com © 1997- 2024 Netspective Communications LLC. All Rights Reserved.</p>
+    <p class="mt-10 text-center text-base leading-5 text-gray-500">Healthcare IT Consulting &amp; Medical Technology Solutions - Netspective.com © 1997- {year} Netspective Communications LLC. All Rights Reserved.</p>
   </div>
 </footer>
 <ScrollToTop client:only="react"/>
