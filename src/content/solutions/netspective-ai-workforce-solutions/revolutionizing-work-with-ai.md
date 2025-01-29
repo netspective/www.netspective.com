@@ -18,4 +18,4 @@ At the core of our solutions lies the belief that the future workforce will cons
 <br>
 
 
-![Image](/public/assets-natural/brand/www.netspective.com/solutions/netspective-ai-workforce-solutions.jpg)
+![Image](/assets-natural/brand/www.netspective.com/solutions/netspective-ai-workforce-solutions.jpg)
