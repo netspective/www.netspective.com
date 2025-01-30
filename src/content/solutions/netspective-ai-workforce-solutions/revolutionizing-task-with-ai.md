@@ -1,10 +1,10 @@
 ---
-title: Revolutionizing Work with AI
+title: Revolutionizing Tasks with AI Workforce
 type: page
 weight: 1
-slugid: revolutionizing-work-with-ai
-metatitle: Revolutionizing Work with AI
-description: Revolutionizing Work with AI
+slugid: revolutionizing-task-with-ai
+metatitle: Revolutionizing Tasks with AI Workforce
+description: Revolutionizing Tasks with AI Workforce
 ---
 
 At the core of our solutions lies the belief that the future workforce will consist of collaborative AI agents and humans, working together seamlessly. Our offerings include:
