@@ -22,4 +22,4 @@ authnAuthz:
 
 This certification extends beyond Type 1 by evaluating the operational effectiveness of these controls over an extended period. It provides assurance that Netspective's security measures are not only in place but are also consistently maintained and effective in protecting client data.
 
-**Link to Certificate and Report** 
+**Click the buttons below to view the Certificate and Report.** 

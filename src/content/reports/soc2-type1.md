@@ -43,6 +43,6 @@ By obtaining this certification, Netspective Communications LLC demonstrates its
 
 This certification confirms that Netspective Communications LLC has designed and implemented security controls that align with the Trust Services Criteria at a specific point in time. It verifies that the necessary safeguards are in place to protect sensitive information.
 
-**Link to Certificate and Report**
+**Click the buttons below to view the Certificate and Report.**
 
 
