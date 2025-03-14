@@ -18,7 +18,7 @@ authnAuthz:
   validTokens: ["123", "456"]
 ---
 
-<img src="/assets-natural/brand/www.netspective.com/21972-312_SOC_NonCPA.png" alt="SOC2 Compliance" style="margin:auto; border: 0px; box-shadow:none !important;" />
+<img src="/assets-natural/brand/www.netspective.com/21972-312_SOC_NonCPA.png" alt="SOC2 Compliance" style="margin:auto; border: 0px; box-shadow:none !important; width: 20%;" />
 
 
 ### Building Trust with SOC 2 Compliance: Netspective Communications LLC's Commitment to Security
