@@ -214,7 +214,48 @@ const r = routes(Astro, Astro.props.route);
                 <div class="text-lg font-semibold py-2 text-gray-600">SOC2 - Type 1</div>
             </div>
         </div>
-        </article>     
+        </article>  
+        <section class="dark:bg-slate-800 not-prose hidden">
+          <div class="inset-0 dark:bg-transparent">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 pt-10 text-lg text-center font-medium">              
+              <h3 class="text-2xl font-bold pb-10 text-gray-800 text-center uppercase">Compliance Certifications, Standards, and Regulations</h3>
+            </div>
+            <div class="mx-auto max-w-5xl">
+              <div class="grid grid-cols-2 md:grid-cols-2 gap-x-8 p-8 rounded-t-lg max-w-5xl">
+                <div
+                  class="relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6 text-left"
+                >
+                  <a href="/soc2#soc2-type1">
+                    <img class="w-20 h-20 object-center" src={r.uaAssetURL.brand(
+                      "/www.netspective.com/21972-312_SOC_NonCPA.png"
+                    )} alt="SOC2 Type1" />
+                    <div class="text-xl font-bold">SOC2 Type1</div>
+                  </a>
+                  <p class="my-4 text-sm text-gray-500 dark:text-gray-400">
+                    This certification affirms that Netspective has designed its internal controls to meet the Trust Services
+                    Criteria as of a specific point in time. The audit verifies that systems are in place to protect sensitive
+                    data.
+                  </p>
+                </div>
+                <div
+                  class="relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6 text-left"
+                >
+                  <a href="/soc2#soc2-type2">
+                    <img class="w-20 h-20 object-center" src={r.uaAssetURL.brand(
+                      "/www.netspective.com/21972-312_SOC_NonCPA.png"
+                    )} alt="SOC2 Type1" />
+                    <div class="text-xl font-bold">SOC2 Type2</div>
+                  </a>
+                  <p class="my-4 text-sm text-gray-500 dark:text-gray-400">
+                    This report goes a step further by assessing the operational effectiveness of the controls over a defined
+                    period. It provides evidence that the implemented controls have been actively maintained and functioned
+                    effectively to protect client data over time.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>   
     </section>
     <section class="px-8 sm:px-6 lg:px-8 bg-cover bg-no-repeat bg-center py-10 bg-image">
       <article class="mx-auto max-w-6xl py-9 text-white text-center">

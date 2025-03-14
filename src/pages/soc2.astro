@@ -1,0 +1,44 @@
+---
+import NetspectiveLayout from "../layouts/ds/tailwind/NetspectiveLayout.astro"
+import Viewcertificate from '../components/ViewCertificate'; 
+import ViewPrivateReportButton from '../components/ViewPrivateReport'; 
+import * as type1 from '../content/reports/soc2-type1.md';
+import * as type2 from '../content/reports/soc2-type2.md';
+import * as conclusionContent from '../content/reports/why-soc2.md';
+import md5 from 'md5';
+import { marked } from 'marked';
+
+const contentType1 = await type1.rawContent();
+const htmlContentType1 = marked(contentType1);
+
+const contentType2 = await type2.rawContent();
+const htmlContentType2 = marked(contentType2);
+
+const generalContent = await conclusionContent.rawContent();
+const htmlGeneralContent = marked(generalContent);
+
+const encryptedType1ValidTokens = type1.frontmatter.authnAuthz.validTokens.map((token) => md5(token));
+const encryptedType2ValidTokens = type2.frontmatter.authnAuthz.validTokens.map((token) => md5(token));
+---
+
+<NetspectiveLayout frontmatter={type1.frontmatter}>
+  <main class="container mx-auto p-4">
+    <article set:html={htmlContentType1} class="mt-2 curated-content"></article>
+    <Viewcertificate client:only="react" certificateTemplate="soc2-type1-ceritificate"/>
+    <ViewPrivateReportButton validTokens={encryptedType1ValidTokens} reportTemplate="soc2-type1-report" buttonLabel="SOC 2 Type 1 Report" client:only="react" />
+
+    <article set:html={htmlContentType2} class="mt-6 curated-content"></article>
+
+    <Viewcertificate client:only="react" certificateTemplate="soc2-type2-ceritificate"/>
+    <ViewPrivateReportButton validTokens={encryptedType2ValidTokens} reportTemplate="soc2-type2-report" buttonLabel="SOC 2 Type 2 Report" client:only="react" />
+    <hr/>
+    <article set:html={htmlGeneralContent} class="mt-6 curated-content"></article>
+  </main>
+</NetspectiveLayout>
+
+<!-- Client-side JavaScript to handle button click -->
+<script>
+  document.getElementById('showReport').addEventListener('click', () => {
+    document.getElementById('reportContainer').style.display = 'block';
+  });
+</script>
