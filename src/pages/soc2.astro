@@ -31,7 +31,6 @@ const encryptedType2ValidTokens = type2.frontmatter.authnAuthz.validTokens.map((
 
     <Viewcertificate client:only="react" certificateTemplate="soc2-type2-ceritificate"/>
     <ViewPrivateReportButton validTokens={encryptedType2ValidTokens} reportTemplate="soc2-type2-report" buttonLabel="SOC 2 Type 2 Report" client:only="react" />
-    <hr/>
     <article set:html={htmlGeneralContent} class="mt-6 curated-content"></article>
   </main>
 </NetspectiveLayout>
