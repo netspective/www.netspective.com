@@ -11,12 +11,12 @@
     "sync-cc-routes": "DENO_NO_PACKAGE_JSON=1 deno run -A src/content/_cc-routes-sync.deno.ts"
   },
   "dependencies": {
-    "@astrojs/react": "^4.2.0",
+    "@astrojs/react": "^4.2.1",
     "@astrojs/tailwind": "^6.0.0",
     "@mozilla/readability": "^0.4.4",
     "@types/react": "^18.2.16",
     "@types/react-dom": "^18.2.7",
-    "astro": "^5.2.5",
+    "astro": "^5.5.2",
     "dompurify": "^3.0.5",
     "jsdom": "^22.1.0",
     "marked": "^8.0.0",
