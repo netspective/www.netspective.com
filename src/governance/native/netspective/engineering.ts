@@ -21,7 +21,7 @@ export interface Props {
     {
         weight: "3",
         name: "Arun K R",
-        image: "/assets-natural/brand/www.netspective.com/team/Arun-K-R.png",
+        image: "/assets-natural/brand/www.netspective.com/team/Arun-K-R.jpg",
     },
     {
         weight: "4",
