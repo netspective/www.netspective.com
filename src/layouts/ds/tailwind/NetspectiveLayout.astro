@@ -7,6 +7,7 @@ import NetspectiveFooter  from "./NetspectiveFooter.astro";
 // }
 const { route } = Astro.props;
 //const r = routes(Astro, Astro.props.route);
+const isHomePage = Astro.props.isHome ?? (Astro.url.pathname === '/' || Astro.url.pathname === '');
 ---
 <!DOCTYPE html>
 <html>
@@ -35,6 +36,9 @@ const { route } = Astro.props;
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <meta name="twitter:title" content="Safety, privacy, and security focused technology consulting" />
   <meta name = "twitter:description" content="Software, technology, and management consulting focused on firms im pacted by FDA, ONC, NIST or other safety, privacy, and security regulations" property="og:description">
+  {isHomePage && (
+    <meta name="google-site-verification" content="pgEzhm6kzpwLneIzUtAWrE_24B77bA2swIGAB_MEZuE" />
+  )}
   <title>Netspective - Consulting and Solutions for Regulated IT and Engineering services - Government, Health and Medical Technology</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
   <link rel="shortcut icon" type="image/x-icon" href="/assets-natural/brand/www.netspective.com/favicon/favicon.ico">
